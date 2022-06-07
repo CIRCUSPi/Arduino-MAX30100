@@ -121,6 +121,8 @@ void PulseOximeter::checkSample()
             state = PULSEOXIMETER_STATE_IDLE;
             spO2calculator.reset();
         }
+        this->ftPlsVal = filteredPulseValue;
+        this->ir = rawIRValue;
 
         switch (debuggingMode) {
             case PULSEOXIMETER_DEBUGGINGMODE_RAW_VALUES:

@@ -59,6 +59,8 @@ public:
     void setIRLedCurrent(LEDCurrent irLedCurrent);
     void shutdown();
     void resume();
+    float ftPlsVal;
+    float ir;
 
 private:
     void checkSample();
